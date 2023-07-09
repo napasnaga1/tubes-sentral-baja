@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="halamanBayar" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pembayaran.ControllerPembayaran">
+   <children>
+      <ScrollPane fx:id="halamanBayarSP" hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" prefHeight="730.0" prefWidth="1290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;">
+               <children>
+                  <SplitPane dividerPositions="0.42265625, 0.6851562499999999, 0.8117187499999999" layoutX="822.0" layoutY="129.0" orientation="VERTICAL" prefHeight="429.0" prefWidth="351.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: grey;">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="199.0" prefWidth="349.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="13.0" text="Ringkasan Belanja">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="50.0" text="Total Belanja">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="80.0" text="Total Harga">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="110.0" text="Total Ongkos Kirim">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="140.0" text="Asuransi Pengiriman">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="273.0" layoutY="80.0" text="5000">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="273.0" layoutY="110.0" text="2000">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="273.0" layoutY="140.0" text="100">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="12.0" text="Biaya Transaksi">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="273.0" layoutY="40.0" text="500">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="273.0" layoutY="70.0" text="500">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="40.0" text="Biaya Layanan">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="70.0" text="Biaya Jasa Aplikasi">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="11.0" text="Total Tagihan">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="268.0" layoutY="11.0" text="8100">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: white';">
+                           <children>
+                              <Button fx:id="bayarBtn" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#tampilKonfirmasi" prefHeight="49.0" prefWidth="319.0" style="-fx-background-color: #808000; -fx-background-radius: 10;" text="Bayar" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.6996124031007752" layoutX="79.0" layoutY="444.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="714.0" style="-fx-border-color: grey; -fx-border-radius: 10; -fx-background-color: white;">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="113.0" prefWidth="710.0">
+                           <children>
+                              <MenuButton fx:id="pilihPengirimanDrawer" layoutX="23.0" layoutY="39.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="306.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 5;" text="Pilih">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#pilihPengirimanAction" text="Reguler" />
+                                    <MenuItem mnemonicParsing="false" onAction="#pilihPengirimanAction" text="Instan" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="pilihKurirDrawer" layoutX="366.0" layoutY="39.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="306.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 5;" text="Pilih">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#pilihKurirAction" text="LNW Antar" />
+                                 </items>
+                              </MenuButton>
+                              <Label fx:id="estimasi" layoutX="365.0" layoutY="82.0" text="Estimasi" textFill="#797979">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="14.0" text="Pilih Pengiriman">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="365.0" layoutY="14.0" text="Pilih Kurir">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="23.0" layoutY="11.0" text="COD">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <Label layoutX="93.0" layoutY="141.0" text="Checkout">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="191.0" text="Toko Bu Sumiyati">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="217.0" text="Condong Catur" textFill="#797979">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="93.0" layoutY="248.0" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: #3E2723; -fx-border-radius: 5;">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="1.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageSource/akurat_20180514030541_D2UO0G.jpg" />
+                           </image></ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="182.0" layoutY="246.0" text="Terong Ungu">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="274.0" text="500 gram" textFill="#797979">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="298.0" text="Rp5000,00">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="182.0" layoutY="334.0" prefHeight="31.0" prefWidth="101.0" style="-fx-border-color: grey; -fx-border-radius: 5; -fx-background-color: white;">
+                     <children>
+                        <Label fx:id="kuantitas" layoutX="43.0" layoutY="3.0" text="0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="1.0" layoutY="1.0" onMouseClicked="#kurangKuantitas" prefHeight="29.0" prefWidth="21.0">
+                           <children>
+                              <ImageView fitHeight="11.0" fitWidth="11.0" layoutX="8.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/minus%20copy.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="79.0" layoutY="1.0" onMouseClicked="#tambahKuantitas" prefHeight="29.0" prefWidth="21.0">
+                           <children>
+                              <ImageView fitHeight="11.0" fitWidth="11.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/plus%20copy.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Label layoutX="93.0" layoutY="393.0" text="Pengiriman dan Pembayaran">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="19.0" layoutY="141.0" prefHeight="35.0" prefWidth="35.0">
+                     <children>
+                        <ImageView fx:id="backFromCheckoutBtn" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#backFromCheckout" pickOnBounds="true" preserveRatio="true" y="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../ImageSource/baseline_arrow_back_black_48dp%20copy%202.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane fx:id="navigasi" layoutX="-2.0" layoutY="-1.0" prefHeight="123.0" prefWidth="1267.0" style="-fx-border-color: grey; -fx-background-color: white;">
+            <children>
+                    <Pane layoutX="262.0" layoutY="44.0" prefHeight="32.0" prefWidth="501.0" style="-fx-border-color: grey; -fx-border-radius: 49; -fx-background-radius: 50; -fx-background-color: white;">
+                    <children>
+                        <Pane layoutX="24.0" layoutY="10.0" prefHeight="20.0" prefWidth="20.0">
+                            <children>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../ImageSource/baseline_search_black_48dp.png" />
+                                </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <TextField fx:id="searchBar" layoutX="44.0" layoutY="2.0" onAction="#searchBarAction" prefHeight="28.0" prefWidth="439.0" promptText="Mau apa, mau apa, mau apa sekarang?" style="-fx-background-color: white; -fx-border-color: transparent; -fx-background-radius: 15; -fx-prompt-text-fill: #3E2723;" />
+                    </children>
+                    </Pane>
+                    <ImageView fx:id="chatBtn" fitHeight="24.0" fitWidth="24.0" layoutX="936.0" layoutY="50.0" onMouseClicked="#tampilPaneChat" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../ImageSource/baseline_question_answer_black_48dp.png" />
+                    </image>
+                    </ImageView>
+                    <ImageView fx:id="notifikasiBtn" fitHeight="24.0" fitWidth="24.0" layoutX="876.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../ImageSource/baseline_notifications_active_black_48dp.png" />
+                    </image>
+                    </ImageView>
+                    <ImageView fx:id="daftarPesananBtn" fitHeight="22.0" fitWidth="22.0" layoutX="816.0" layoutY="51.0" onMouseClicked="#tampilDaftarPesanan" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../ImageSource/icons8-list-100%20copy.png" />
+                    </image>
+                    </ImageView>
+                    <AnchorPane fx:id="tokoBtn" layoutX="1003.0" layoutY="39.0" onMouseClicked="#tampilToko" prefHeight="45.0" prefWidth="95.0">
+                    <children>
+                        <Label layoutX="13.0" layoutY="10.0" style="-fx-font-style: nunito;" text="Toko">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="57.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageSource/baseline_store_black_48dp.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    </AnchorPane>
+                    <AnchorPane fx:id="profilBtn" layoutX="1131.0" layoutY="39.0" onMouseClicked="#tampilPaneProfil" prefHeight="45.0" prefWidth="95.0">
+                    <children>
+                        <Label layoutX="12.0" layoutY="10.0" style="-fx-font-style: nunito;" text="Profil">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="57.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageSource/baseline_person_black_48dp.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    </AnchorPane>
+            <AnchorPane layoutX="50.0" layoutY="4.0" prefHeight="114.0" prefWidth="170.0">
+               <children>
+                  <ImageView fitHeight="117.0" fitWidth="190.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../ImageSource/Untitled_Artwork.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+                </children>
+        </AnchorPane>
+      <AnchorPane fx:id="konfirmasiPemesanan" layoutX="383.0" layoutY="292.0" prefHeight="163.0" prefWidth="454.0" style="-fx-background-color: white; -fx-border-color: black;" visible="false">
+         <children>
+            <Label layoutX="41.0" layoutY="32.0" text="Apakah Anda yakin untuk melanjutkan pemesanan?">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="281.0" layoutY="96.0" mnemonicParsing="false" onAction="#lanjutBayar" prefHeight="32.0" prefWidth="57.0" style="-fx-background-color: #4CBB17; -fx-border-color: black; -fx-background-radius: 5; -fx-border-radius: 5;" text="Ya">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="115.0" layoutY="96.0" mnemonicParsing="false" onAction="#batalBayar" style="-fx-background-color: #F44336; -fx-border-color: black; -fx-background-radius: 5; -fx-border-radius: 5;" text="Tidak">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pemesananBerhasil" layoutX="383.0" layoutY="292.0" prefHeight="163.0" prefWidth="454.0" style="-fx-background-color: white; -fx-border-color: black;" visible="false">
+         <children>
+            <Label layoutX="154.0" layoutY="32.0" text="Pemesanan Berhasil">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="134.0" layoutY="96.0" mnemonicParsing="false" onMouseClicked="#backToMenuUtama" style="-fx-background-radius: 5; -fx-border-radius: 5;" text="Kembali ke Menu Utama">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

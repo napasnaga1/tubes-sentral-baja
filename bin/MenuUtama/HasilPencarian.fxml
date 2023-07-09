@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuUtama" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuUtama.ControllerMenuUtama">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="942.0" prefWidth="1280.0" style="-fx-background-color: white;">
+                <children>
+                  <Pane fx:id="hmproduk1" layoutX="47.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="terong ungu">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 3000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/akurat_20180514030541_D2UO0G.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk11" layoutX="281.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="pisang">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 10.000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/Kenali-Ciri-Buah-Pisang-Matang.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn11" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk12" layoutX="522.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="kentang">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 6000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/yetI9s3q30.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn12" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk111" layoutX="764.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="bayam">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 2000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/7-Manfaat-Sayur-Bayam-Untuk-Tubuh--1200x900.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn111" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk1111" layoutX="1003.0" layoutY="216.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="sarden kaleng">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 6000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;" />
+                        <Button fx:id="lihatDetailBtn1111" layoutX="-3.0" layoutY="-1.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                        <ImageView fitHeight="97.0" fitWidth="95.0" layoutX="53.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ImageSource/3e4c2b5f01ff7912751d70457eaab2b4.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="lihatDetailBtn1113" layoutX="-3.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="43.0" layoutY="150.0" text="Hasil Pencarian">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="hmproduk13" layoutX="44.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="wortel">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 3000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/1662466486.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn1" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk112" layoutX="278.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="kornet">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 7000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="40.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/73.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn112" layoutX="-3.0" layoutY="-1.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk121" layoutX="519.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="ayam potong">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 12.000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/Daging-Ayam.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn121" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk1112" layoutX="761.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="jagung">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 2000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/tips-memilih-jagungjpg-20220828092415.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn1112" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk11111" layoutX="1000.0" layoutY="462.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="daging sapi">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 20.000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/60ee601a87545.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn11111" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hmproduk131" layoutX="44.0" layoutY="713.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f2f2; -fx-background-radius: 15; -fx-border-color: d3d3d3; -fx-border-radius: 15;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="135.0" prefHeight="20.0" prefWidth="140.0" text="keju">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="167.0" prefHeight="17.0" prefWidth="83.0" text="Rp. 3000">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../ImageSource/keju-kraft.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="lihatDetailBtn13" layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#tampilDeskripsi" prefHeight="203.0" prefWidth="207.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="297.0" layoutY="148.0" text="&quot;&quot;">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <AnchorPane fx:id="navBarPlaceHolder" layoutX="-2.0" layoutY="-1.0" prefHeight="123.0" prefWidth="1267.0" />
+    </children>
+</AnchorPane>
